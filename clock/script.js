@@ -1,7 +1,6 @@
 const equationElement = document.getElementById('equation');
-const mathJaxElement = document.getElementById('MathJax-script');
 
-mathJaxElement.addEventListener('load', function() {
+window.addEventListener('load', function() {
     updateTime();
     setInterval(updateTime, 1000);
 })
