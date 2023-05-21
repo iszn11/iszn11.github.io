@@ -1,1 +1,11 @@
-<!doctypehtml><html lang=en-us><head><meta charset=utf-8><title>Handy Online</title><meta content="width=device-width"name=viewport><style>body,html{margin:0;padding:0;height:100%}body{color:#fff;background-color:#000;font-family:serif;font-size:16px}#top{display:flex;justify-content:center;align-items:center;height:100%}#canvas{display:block;border:none}</style></head><body><div id=top><canvas class=emscripten id=canvas oncontextmenu=event.preventDefault() tabindex=-1></canvas></div><script src=https://cdn.jsdelivr.net/gh/eligrey/FileSaver.js/dist/FileSaver.min.js></script><script>function saveFileFromMEMFSToDisk(e,n){const t=/^((?!chrome|android).)*safari/i.test(navigator.userAgent),o=FS.readFile(e),i=new Blob([o.buffer],{type:t?"application/octet-stream":"application/octet-binary"});saveAs(i,n)}var Module={print:function(e){arguments.length>1&&(e=Array.prototype.slice.call(arguments).join(" ")),console.log(e)},printErr:function(e){arguments.length>1&&(e=Array.prototype.slice.call(arguments).join(" ")),console.error(e)},canvas:function(){const e=document.getElementById("canvas");return e.addEventListener("webglcontextlost",(function(e){alert("WebGL context lost. You will need to reload the page."),e.preventDefault()}),!1),e}(),totalDependencies:0};const nativeW=960,nativeH=540,nativeAR=960/540;function resizeCanvas(){const e=document.getElementById("canvas");if(window.innerWidth/window.innerHeight>960/540){const n=window.innerHeight,t=n*(960/540);console.log(`Changing canvas size to (${t}, ${n})`),e.style.width=t+"px",e.style.height=n+"px"}else{const n=window.innerWidth,t=n/(960/540);console.log(`Changing canvas size to (${n}, ${t})`),e.style.width=n+"px",e.style.height=t+"px"}}window.onresize=resizeCanvas</script><script src=handy-online.js async></script></body></html>
+<!doctype html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<title>Handy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bundle.css">
+		<script defer src="bundle.js"></script>
+	</head>
+	<body></body>
+</html>
